@@ -5,6 +5,7 @@
 
 def fun_args(normal,*args,**kwargs):
     print(normal)
+    print(args)
     for items in args:
         print(items)
     print("Some value of dictionary is")

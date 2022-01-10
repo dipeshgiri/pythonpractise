@@ -15,3 +15,13 @@ func=[sq,cu]
 for i in range(10):
     val=list(map(lambda x:x(i),func))
     print(val)
+
+def func_greater(num):
+    return num>5
+
+grth5=list(filter(func_greater,num))
+print(grth5)
+
+from functools import reduce
+r=reduce(lambda x,y:x*y,num)
+print(r)
